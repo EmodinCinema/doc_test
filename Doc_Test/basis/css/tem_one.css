@@ -10,13 +10,14 @@ body {
   position: absolute;
 }
 .container {
+  top:0;
   width: 500px;
   height: 550px;
   /* background-color: brown; */
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -250px 0 0 -250px;
+  margin: -330px 0 0 -250px;
 }
 .container_tem {
   height: 95%;
@@ -51,20 +52,20 @@ body {
 .answer #btn_ans {
   background-color: #c062d3;
   border-radius: 10px;
-  height: 50px;
+  height: 75px;
   width: 90%;
   clear: both;
   border: none;
   color: white;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   margin-right: 25px;
   margin-left: 25px;
   /* padding: 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  /* font-size: 16px; */
   cursor: pointer;
 }
 .answer #btn_ans:hover {
