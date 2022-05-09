@@ -2794,7 +2794,10 @@ function showResults(){
 
     let title, message;
     const que_leng = questions.length;  //Колличество всех вопросов
-    let percent_score = ((score * 100) / que_leng);    //Набранный бал в процентах
+    let percent_score = Math.round((score * 100) / que_leng);    //Набранный бал в процентах
+    console.log(percent_score);
+    let percent_score_round = Math.round(percent_score);    //Округление набранного балла в процентах
+    console.log(percent_score_round);
     const percent_que_leng = ((que_leng * 100) / que_leng); //Колличество всех вопросов в процентах
 
     if(percent_score == percent_que_leng){
@@ -2811,7 +2814,7 @@ function showResults(){
     }
 
     // let result = `${percent_score} из ${percent_que_leng}%`;
-    let result = `Верно: ${percent_score}%`
+    let result = `Верно: ${percent_score_round}%`
     console.log(result);
 
     const finalMessage = resultsTemplate

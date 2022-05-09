@@ -52,20 +52,23 @@ body {
 .answer #btn_ans {
   background-color: #c062d3;
   border-radius: 10px;
-  height: 75px;
+  min-height: 75px;
+  max-height: 15%;
   width: 90%;
   clear: both;
   border: none;
   color: white;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 25px;
   margin-left: 25px;
   /* padding: 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding: 0px 10px;
   /* font-size: 16px; */
+  /* font-size: max(15px, min(12px, calc(100vw * 12 / 450))); */
   cursor: pointer;
 }
 .answer #btn_ans:hover {

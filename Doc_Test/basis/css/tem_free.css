@@ -51,7 +51,8 @@ body {
 .answer #btn_ans {
   background-color: #c062d3;
   border-radius: 10px;
-  height: 75px;
+  min-height: 75px;
+  max-height: 15%;
   width: 90%;
   clear: both;
   border: none;
@@ -64,7 +65,9 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  padding: 0px 10px;
+  /* font-size: 16px; */
+  /* font-size: max(15px, min(12px, calc(100vw * 12 / 450))); */
   cursor: pointer;
 }
 .answer #btn_ans:hover {
